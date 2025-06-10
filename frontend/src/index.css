@@ -1,0 +1,324 @@
+/* registration pages */
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+/*common styling*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+.page-title{
+  font-size: 25px;
+  color: rgba(0, 0, 0, 0.863);
+  font-weight: bold;
+}
+.card-title{
+  font-size: 22px;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.736);
+  margin-bottom: 1px;
+}
+/* login-registation */
+.lr-page{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(./images/back-1.jpg);
+}
+.lr-wrapper{
+  background: rgba(255, 255, 255, 0.469);
+  padding: 34px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  border-radius: 6px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+.lr-wrapper .lr-h2{
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+.lr-wrapper .lr-form{
+  margin-top: 10px;
+}
+.lr-wrapper .lr-input-box{
+  height: 52px;
+  margin: 18px 0;
+}
+.lr-input-box input{
+  height: 100%;
+  width: 100%;
+  outline: none;
+  padding: 0 15px;
+  font-size: 17px;
+  font-weight: 400;
+  color: #333;
+  border: 1.5px solid #C7BEBE;
+  border-bottom-width: 1.5px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+.lr-input-box input:focus,
+.lr-input-box input:valid{
+  border-color: #4070f4;
+}
+.lr-form .policy{
+  display: flex;
+  align-items: center;
+}
+.lr-h3{
+  color: #707070;
+  font-size: 14px;
+  font-weight: 500;
+  margin-left: 100px;
+
+}
+.lr-h4{
+  color: #707070;
+  font-size: 14px;
+  font-weight: 500;
+  
+}
+.lr-input-box.button input{
+  color: #fff;
+  letter-spacing: 1px;
+  border: none;
+  background: #4070f4;
+  cursor: pointer;
+}
+.lr-input-box.button input:hover{
+  background: #0e4bf1;
+}
+
+.lr-select {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  padding: 0 15px;
+  font-size: 17px;
+  font-weight: 400;
+  color: #333;
+  border: 1.5px solid #C7BEBE;
+  border-bottom-width: 1.5px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.lr-select select:focus,
+.lr-select select:valid {
+  border-color: #4070f4;
+}
+
+.lr-select option {
+  font-weight: normal;
+}
+
+
+.text .lr-h3{
+ color: #333;
+}
+.text .lr-h3 .lr-a{
+  color: #4070f4;
+  text-decoration: none;
+}
+.text .lr-h3 .lr-a:hover{
+  text-decoration: underline;
+}
+.bk-full-width-button{
+  background-color:  #1f3959 !important;
+  border-color:  #0b1a2c !important;
+  height: 40px !important;
+  width: 100% !important;
+  color: white;
+  font-size: 16px !important;
+}
+/* loader styling ----------------------------------------------------------*/
+.loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.342);
+  z-index:9999;
+}
+html, body {
+  height: 100%;
+  margin: 0;
+}
+.loader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .dot {
+      animation-fill-mode: forwards;
+      animation-name: busy;
+      animation-duration: 0.5s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+      animation-timing-function: ease-in;
+      height: 48px;
+      width: 48px;
+      background: radial-gradient(
+          circle at 65% 15%,
+          hsl(146, 85%, 90%) 1px,
+          hsl(146, 85%, 61%) 3%,
+          hsl(146, 85%, 41%) 60%,
+          hsl(146, 85%, 21%) 100%
+      );
+      border-radius: 50%;
+
+      &:nth-child(2) {
+          animation-delay: 0.25s;
+      }
+
+      &:nth-child(3) {
+          animation-delay: 0.5s;
+      }
+  }
+}
+@keyframes busy {
+  0% {
+      transform: translateY(0) scale(1);
+      filter: drop-shadow(0 32px 12px rgba(0, 0, 0, 0.05));
+  }
+  100% {
+      transform: translateY(100%) scale(0.75);
+      filter: drop-shadow(0 2px rgba(0, 0, 0, 0.25));
+  }
+}
+/* antd overide ---------------------------------------------------------*/
+.ant-picker-input input{
+  border: none !important;
+}
+.ant-picker{
+  border-radius: 5px !important;
+  border: 1px solid rgba(128,128,128,0.521) !important;
+}
+.primary-button{
+  background-color:  #0b1a2c !important;
+  border-color:  #0b1a2c !important;
+  height: 40px !important;
+  width: 100% !important;
+  color: white;
+  font-size: 16px !important;
+  width: max-content !important;
+}
+.ant-input{
+  margin-bottom: 0px !important;
+}
+hr {
+  margin: 0 0;
+}
+
+/* notications --------------------------------------------------*/
+
+
+/* tabs ---------------------------------------------------------------- */
+
+.tab {
+  overflow: hidden;
+  border-bottom: 1px solid grey;
+}
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 10px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+/* .tab button:hover {
+
+} */
+
+.tab button.active {
+  border: 1px solid rgba(128, 128, 128, 0.692);
+  border-bottom: none;
+  border-radius: 2px;
+}
+
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border-top: none; 
+}
+/* Doctor ---------------------------------------------- */
+.doc-card-text{
+  color: rgba(0, 0, 0, 0.757) !important;
+  padding: 1px !important;
+  margin: 0px !important;
+}
+
+.doc-cr{
+  color: rgba(0, 0, 0, 0.818) !important;
+  width: 100%;
+  
+}
+
+.dc-b{
+  background: linear-gradient(to right, rgba(164, 193, 207, 0.818),rgb(235, 221, 221));
+}
+
+
+/* ---------------------------------------------------------------------- */
+.hm-by {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, rgb(103, 103, 213), white);
+}
+.hm-container {
+  width: 100%;
+  max-width: 1450px; 
+  margin: auto;
+}
+.hm-banner {
+  text-align: center !important;
+  padding: 50px;
+}
+.hm-search-bar {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  border-radius: 5px !important;
+}
+.search-input {
+  width: 35%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.search-input:focus {
+  border-color: #007bff;
+}
+.hm-search-bar select, .search-bar input {
+  width: 200px;
+  padding: 10px;
+  margin-right: 10px;
+}
+@media (max-width: 768px) {
+  .hm-container {
+    width: 100%;
+  }
+  .hm-search-bar {
+    flex-direction: column;
+  }
+  .hm-search-bar select, .hm-search-bar input {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}

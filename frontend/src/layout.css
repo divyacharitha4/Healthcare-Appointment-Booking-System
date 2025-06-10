@@ -1,0 +1,90 @@
+
+.main{
+    min-height: 100vh;
+    background-color:rgb(194, 215, 235);
+}
+.sidebar{
+    background: linear-gradient(to top, rgb(36, 111, 173), rgba(173, 216, 230, 0.51));
+    border-color: rgba(#535d7d, 0.3);
+    box-shadow: 0 0 2px grey;
+    min-height: 100vh;
+    padding-right: 3px;
+}
+.sidebar-header h1{
+    color: rgba(0, 0, 0, 0.753);
+    font-weight: bold;
+    padding: 10px;
+}
+.content{
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+.header{
+    height: 10-vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.928);
+    padding: 5px;
+    border-bottom: 1px solid gray;
+}
+.body{
+    min-height: 100vh;
+    width: 95%;
+    border-radius: 5px;
+}
+.menu{
+    margin-top: 30px;
+    padding: 5px;
+}
+.menu-item{
+    margin-top: 40px;
+}
+.menu-item a{
+    color: rgba(0, 0, 0, 0.723);
+    text-decoration: none;
+    font-size: 20px;
+}
+.menu-item a:hover{
+    font-weight: 400 !important;
+}
+.menu-item i{
+    color: rgba(11, 0, 128, 0.705);
+    text-decoration: none;
+    font-size: 20px;
+    margin : 0  16px;
+}
+
+.active-menu-item{
+    color: black !important;
+    background-color: #2f609cb7;
+    padding: 5px;
+    border-radius: 5px;
+}
+.remix-icons{
+    font-size: 30px !important;
+    color: black;
+    cursor: pointer;
+    padding-left: 10px;
+}
+.remix-icons-1{
+    font-size: 30px !important;
+    color: grey;
+    cursor: pointer;
+    padding-left: 10px;
+}
+
+.role{
+    color: black !important;
+    font-size: 14px;
+    margin-top: -40px !important;
+}
+
+.ly-cl{
+    padding-left: 0px !important;
+}
+.anchor-lay{
+    text-decoration: none !important;
+    
+}
